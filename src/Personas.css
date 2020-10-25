@@ -1,0 +1,35 @@
+.card {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: black;
+    border: 8px solid white;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card h5 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2em;
+}
+
+.card h6 {
+    font-size: 1em;
+}
+
+.card p {
+    font-size: 1em;
+}
+
+.name {
+    display: flex;
+}
+
+.btn-danger {
+    float: right;
+    margin-left: auto;
+    padding: 0px 20px 0px 20px;
+    font-size: 2em;
+    font-family: "Luckiest Guy", cursive;
+}

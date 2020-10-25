@@ -1,0 +1,32 @@
+.whole {
+    background-color: #dc1328;
+    height: 100vh;
+    width: 100vw;
+}
+
+.titlebox {
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.personas {
+    padding: 10px;
+    background-color: #dc1328;
+}
+
+h1 {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    background-color: black;
+    font-size: 3em;
+    font-weight: 900;
+    border-radius: 20px;
+    border: 8px solid white;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    padding: 3vh;
+    margin: 0px;
+}
+  
