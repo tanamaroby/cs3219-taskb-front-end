@@ -11,10 +11,9 @@ const App = () => {
   ]);
 
   useEffect(() => {
-    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
     const apiUrl = 'https://sg7cmab7q5.execute-api.us-east-1.amazonaws.com/dev/api/contacts';
     console.log('Fetching list of personas from the database');
-    fetch(proxyUrl + apiUrl, {
+    fetch(apiUrl, {
       method: 'GET',
     })
     .then(res => res.json())
@@ -24,22 +23,20 @@ const App = () => {
   }, [])
 
   function remove(persona) {
-    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
     const apiUrl = 'https://sg7cmab7q5.execute-api.us-east-1.amazonaws.com/dev/api/contacts/';
     const id = persona._id;
-    fetch(proxyUrl + apiUrl + id, {
+    fetch(apiUrl + id, {
       method: 'DELETE',
     })
     console.log("Persona deleted with the id: " + id);
     console.log("re-fetching information from the database");
-    fetch(proxyUrl + apiUrl, {
+    fetch(apiUrl, {
       method: 'GET',
     })
     .then(res => res.json())
     .then((data) => {
       setPersonas(data.data);
     })
-    window.location.reload(true);
   }
 
   return (

@@ -10,7 +10,8 @@ const Persona = ({persona, remove}) => {
                     <h5 class="card-title">{persona.name}</h5>
                     <button onClick={() => {
                         remove(persona); 
-                        console.log("deleted");
+                        // one more time incase lag
+                        remove(persona);
                     }} className="btn btn-danger">Delete</button>
                 </div>
                 <h6 className="card-subtitle mb-2 text-muted">{persona.gender}</h6>
